@@ -64,6 +64,9 @@ img {
 .align-items-center {
    align-items: center;
 }
+.align-items-start {
+   align-items: flex-start;     
+}
 .justify-content-center {
    justify-content: center;
 }
@@ -88,9 +91,15 @@ img {
       display: flex;
       flex-wrap: wrap;
    }
+   .col-xs-01 {
+      width: calc(100%/12);
+   }
   .col-xs-6 {
      width: calc(100%/12*6);
   }
+  .col-xs-11 {
+   width: calc(100%/12*11);
+}
 }
 /* Columns Small Devices */
 @media (min-width: 600px) {

@@ -18,3 +18,16 @@
   background-image: url("../img/js-s.png");
 }
 
+
+/* Experience & Education */
+.exp-edu-1 {
+  height: 250px;
+  margin-top: 10px;
+  border: solid 1px yellow;
+}
+.exp-edu-icon {
+  width: 10px;
+  height: 50px;
+  background-image: url("../img/freeicons-briefcase.png");
+  border: solid 1px white;
+}
