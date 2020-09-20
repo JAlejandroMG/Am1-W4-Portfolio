@@ -1,0 +1,20 @@
+/* Skills */
+[class^= skill-] {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 10px;
+}
+.skill-1 {
+  background-image: url("../img/worpress.png");
+}
+.skill-2 {
+  background-image: url("../img/html-s.png");
+}
+.skill-3 {
+  background-image: url("../img/css-s.png");
+}
+.skill-4 {
+  background-image: url("../img/js-s.png");
+}
+

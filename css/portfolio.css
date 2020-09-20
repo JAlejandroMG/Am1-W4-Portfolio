@@ -1,0 +1,23 @@
+/* Works */
+[class^= work-] {
+  height: 250px;
+  margin-top: 25px;
+}
+.work-1 {
+  background-image: url("https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.work-2 {
+  background-image: url("https://images.pexels.com/photos/1007023/pexels-photo-1007023.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.work-3 {
+  background-image: url("https://images.pexels.com/photos/3815741/pexels-photo-3815741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.work-4 {
+  background-image: url("https://images.pexels.com/photos/4249027/pexels-photo-4249027.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.work-5 {
+  background-image: url("https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.work-6 {
+  background-image: url("https://images.pexels.com/photos/295826/pexels-photo-295826.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
