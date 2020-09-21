@@ -78,3 +78,15 @@ textarea::placeholder {
 .btn:hover {
   background: var(--secondary-color-dk);
 }
+
+/* Contact Medium Devices */
+@media (min-width: 900px) {
+  .contact-personal-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
