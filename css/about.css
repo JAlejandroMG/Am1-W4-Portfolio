@@ -1,9 +1,14 @@
+.about-container {
+  height: 3rem;
+}
+
+
 /* Skills */
 [class^= skill-] {
-  width: 100px;
-  height: 100px;
+  width: 100px; /* PixelsPixelsPixelsPixels */
+  height: 100px; /* PixelsPixelsPixelsPixels */
   margin: auto;
-  margin-top: 10px;
+  margin-top: 10px; /* PixelsPixelsPixelsPixels */
 }
 .skill-1 {
   background-image: url("../img/worpress.png");
@@ -19,15 +24,10 @@
 }
 
 
-/* Experience & Education */
-.exp-edu-1 {
-  height: 250px;
-  margin-top: 10px;
-  border: solid 1px yellow;
-}
-.exp-edu-icon {
-  width: 10px;
-  height: 50px;
-  background-image: url("../img/freeicons-briefcase.png");
-  border: solid 1px white;
+/* About Responsive Breakpoints */
+/* About Medium Devices */
+@media (min-width: 900px) {
+  .about-container {
+    height: 8rem;
+  }
 }

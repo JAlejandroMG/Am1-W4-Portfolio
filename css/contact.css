@@ -1,16 +1,23 @@
+.contact-container {
+  height: 3rem;
+}
+
+
 .contact-data {
   color: var(--primary-color-lt);
 }
+
+
 .contact-data-mail-icon, .contact-data-cell-icon {
-  width: 40px;
-  height: 40px;
+  width: 40px; /* PixelsPixelsPixelsPixels */
+  height: 40px; /* PixelsPixelsPixelsPixels */
   background: var(--primary-color-lt);
   border-radius: 50%;
 }
 .contact-data-mail-iconspan, .contact-data-cell-iconspan {
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
+  width: 30px; /* PixelsPixelsPixelsPixels */
+  height: 30px; /* PixelsPixelsPixelsPixels */
+  border-radius: 10px; /* PixelsPixelsPixelsPixels */
 }
 .contact-data-mail-iconspan {
   background-image: url("../img/freeicons-mail.png");
@@ -19,20 +26,20 @@
   background-image: url("../img/freeicons-phone.png");
 }
 .contact-data-mail-info, .contact-data-cell-info {
-  margin-left: 10px;
+  margin-left: 10px; /* PixelsPixelsPixelsPixels */
 }
 
 
 .contact-data-socialmedia-twitter, .contact-data-socialmedia-linkedin, .contact-data-socialmedia-github {
-  width: 40px;
-  height: 40px;
+  width: 40px; /* PixelsPixelsPixelsPixels */
+  height: 40px; /* PixelsPixelsPixelsPixels */
   background: var(--primary-color-lt);
   border-radius: 50%;
 }
 .contact-data-socialmedia-twitterspan, .contact-data-socialmedia-linkedinspan, .contact-data-socialmedia-githubspan {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
+  width: 30px; /* PixelsPixelsPixelsPixels */
+  height: 30px; /* PixelsPixelsPixelsPixels */
+  border-radius: 5px; /* PixelsPixelsPixelsPixels */
 }
 .contact-data-socialmedia-twitterspan {
   background-image: url("../img/freeicons-tweeter-bw.png");
@@ -66,21 +73,25 @@ textarea {
 textarea::placeholder {
   color: var(--secondary-color-lt);
 }
-
 .btn {
-  width: 120px;
-  height: 30px;
+  width: 120px; /* PixelsPixelsPixelsPixels */
+  height: 30px; /* PixelsPixelsPixelsPixels */
   color: var(--primary-color-lt);
-  background: var(--tertiary-color-dk);
+  background: var(--secondary-color-dk);
   border: none;
-  border-radius: 10px;
+  border-radius: 10px; /* PixelsPixelsPixelsPixels */
 }
 .btn:hover {
-  background: var(--secondary-color-dk);
+  background: var(--tertiary-color-dk); /* FUNCIONAMIENTO */
 }
 
+
+/* Contact Responsive Breakpoints */
 /* Contact Medium Devices */
 @media (min-width: 900px) {
+  .contact-container {
+    height: 8rem;
+  }
   .contact-personal-info {
     display: flex;
     flex-wrap: wrap;

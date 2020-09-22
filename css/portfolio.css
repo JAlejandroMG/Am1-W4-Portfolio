@@ -1,7 +1,12 @@
+.portfolio-container {
+  height: 3rem;
+}
+
+
 /* Works */
-[class^= work-] {
-  height: 250px;
-  margin-top: 25px;
+[class^=work-] {
+  height: 250px; /* PixelsPixelsPixelsPixels */
+  margin-top: 25px; PixelsPixelsPixelsPixels
 }
 .work-1 {
   background-image: url("https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -20,4 +25,13 @@
 }
 .work-6 {
   background-image: url("https://images.pexels.com/photos/295826/pexels-photo-295826.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+
+/* Portfolio Responsive Breakpoints */
+/* Portfolio Medium Devices */
+@media (min-width: 900px) {
+  .portfolio-container {
+    height: 8rem;
+  }
 }

@@ -1,9 +1,9 @@
 .menu {
   position: fixed;
   top: 86vh;
-  right: 50vw;
-  bottom: 0vh;
-  left: 50vw;
+  right: 50%;
+  bottom: 14vh;
+  left: 50%;
   display: flex;
   justify-content: center;
 }
@@ -24,11 +24,11 @@
 .menu-hamburger {
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0; */
   width: 8vh;
   height: 8vh;
   border-radius: 0.4vh;
-  padding: 1.6vh;
+  padding: 1.5vh;
   background: var(--primary-color-lt);
   display: flex;
   align-items: center;
@@ -50,14 +50,14 @@
 .menu-hamburger div::after {
   content: '';
   position: absolute;
-  top: -1.6vh;
+  top: -1.5vh;
   width: 100%;
-  height: 0.4vh;
+  height: 100%;
   background: inherit;
 }
 /* Hamburger lower line */
 .menu-hamburger div::after {
-  top: 1.6vh;
+  top: 1.5vh;
 }
 .menu-showcase {
   position: fixed;
@@ -72,7 +72,7 @@
 }
 /* Background circles overflowing area */
 .menu-showcase div {
-  background: var(--primary-color-dk);
+  background: var(--black-color-translucent);
   border-radius: 50%;
   width: 250vw;
   height: 250vw;
@@ -81,7 +81,7 @@
   justify-content: center; 
   align-items:center;
   transform: scale(0);
-  transition: all 0.6s ease;
+  transition: all 1s ease;
 }
 /* Canvas for Menu */
 .menu-showcase div div {
@@ -89,11 +89,10 @@
   width: 90vw;
   height: 100vh;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.5s ease;
 }
 /* Menu */
 li {
-  list-style: none;
   margin: 6vh;
 }
 ul a {
@@ -101,9 +100,11 @@ ul a {
   font-size: 4vh;
   font-weight: 900;
   line-height: 10vh;
-  transition: color .6s ease;
-  transition: font-size 0.6s ease;
+  transition: color .5s ease;
+  transition: font-size 0.5s ease;
 }
+
+
 /* Animations */
 /* Hamburger animation when checked*/
 .menu-toggler:checked + .menu-hamburger div {
@@ -125,19 +126,15 @@ ul a {
 .menu-toggler:checked ~ .menu-showcase div div {
   opacity: 1;
 }
+
+
 /* Menu Responsive Breakpoints */
-/* Menu Small Devices */
-@media (min-width: 600px) {
-  .menu {
-    top: 88vh;
-    }
-}
 /* Menu Medium Devices */
 @media (min-width: 900px) {
   .menu {
     top: 0;
     right: 50%;
-    bottom: 0;
+    bottom: 100%;
     left: 50%;
   }
   .menu-toggler {
@@ -149,15 +146,16 @@ ul a {
     display: none;
   }
   .menu-showcase {
-    height: 16%;
+    height: 15vh;
     visibility: visible;
+    background: var(--primary-color-dk);
   }
   .menu-showcase div {
+    background: none;
     border-radius: 0;
     width: 100%;
     height: 100%;
-    transform: scale(1);
-    transition: all 0s;
+    transform: none;
   }
   .menu-showcase div div {
     width: 100%;
@@ -167,7 +165,6 @@ ul a {
   }
   .menu-ul {
     width: 60%;
-    height: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -181,6 +178,7 @@ ul a {
   ul a {
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 9vh;
     transition: none;
   }
 }

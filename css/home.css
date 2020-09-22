@@ -1,43 +1,39 @@
 .home {
   height: 100vh;
   background-image: url('../img/lap_dk.jpg');
-  background-color: var(--secondary-color-lt);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .home-overlay {
   height: 100%;
-  background-color: var(--primary-color-dk);
+  background-color: var(--primary-color-dk-translucent);
 }
 .home-container {
-  width: 80%;
-  max-width: 450px;
+  max-width: 674px;
   height: 100%;
   margin: auto;
 }
 .home-container-text {
-  height: 30vh;
-  padding-top: 10vh;
+  height: 28vh;
+  padding-top: 8vh;
 }
 .home-container-text p {
-  color: var(--primary-color-lt);
-  font-size: 6vh;
+  font-size: 5vh;
   font-weight: 900;
 }
 .home-container-text h1 {
-  color: var(--secondary-color-lt);
-  font-size: 4.5vh;
+  font-size: 3.75vh;
   font-weight: 700;
 }
-.home-container-links {
-  height: 70vh;
-  padding-top: 4vh;
+.home-container-project {
+  height: 72vh;
+  padding-top: 2vh;
 }
-.home-container-links a {
+.home-container-project a {
   display: block;
 }
-.main-project-image {
+.home-container-project-image {
   margin-bottom: 2vh;
   height: 35vh;
   background-image: url("../img/code.jpg");
@@ -46,24 +42,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-project-text {
-  color: var(--secondary-color-lt);
+.home-container-project-text {
   font-size: 3vh;
   font-weight: 700;
 }
+
+
 /* Home Page Responsive Breakpoints */
-/* Home Page Small Devices */
-@media (min-width: 600px) {
-  .home-container {
-    max-width: 675px;
-  }
-}
-/* Home Page Medium Devices */
+/* Home Medium Devices */
 @media (min-width: 900px) {
   .home-container {
+    width: 40%;
     max-width: 900px;
   }
   .home-container-text {
+    height: 40vh;
     padding-top: 18vh;
   }
   .home-container-text p {
@@ -74,27 +67,11 @@
     font-size: 1.5rem;
     font-weight: 400;
   }
-  .home-container-links {
-    width: 55%;
-    margin: auto;
-    padding-top: 7%
+  .home-container-project {
+    width: 100%;
   }
-  .main-project-image {
-    margin: 5% 0;
-  }
-  .main-project-text {
+  .home-container-project-text {
     font-size: 1.3rem;
     font-weight: 400;
   }
-}
-/* Home Page Large Devices */
-@media (min-width: 1200px) {
-  .home-container-text p {
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .home-container-text .prueba {
-    font-size: 2rem;
-  }
-
 }
